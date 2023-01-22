@@ -27,6 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 
+draft: true
 # Set captions for image gallery.
 gallery_item:
 - album: gallery

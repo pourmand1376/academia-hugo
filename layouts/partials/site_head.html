@@ -193,6 +193,8 @@
   {{ if not .Date.IsZero }}<meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">{{ end }}
   {{ end }}
 
+  {{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
+
   {{ partial "cookie_consent" . }}
 
   {{ partial "custom_head" . }}
